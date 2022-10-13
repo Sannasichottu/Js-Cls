@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<head>
+  <h4>Nanba</h4>
+</head>
+<body>
+  //Events
+  <button
+    type="button"
+    onclick="document.getElementById('task').innerHTML=Date()"
+  >
+    Click Me
+  </button>
+
+  <button onclick="document.getElementById('demo').innerHTML=Date()">
+    The time is?
+  </button>
+
+  <p id="demo"></p>
+  <p id="task"></p>
+  <p id="abc"></p>
+  <p id="uplow">Naban</p>
+  <script>
+    //Var
+
+    /*var x = 5;
+                var y = 6;
+                var z = x + y;
+                console.log(z);
+
+              2.  var a = 10;
+                var b = 8;
+                var c = a - b;
+                console.log(c);
+
+              3.  var fName = "san";
+                var lName = "nasi";
+                var fullName = fName + lName;
+                console.log(fullName);
+
+               4. var fName = "Dhojay";
+                var lName = "Sannasi";
+                var fullName = fName + lName;
+                console.log(fullName);
+
+                //Let
+
+              1.  let x = 10;
+                document.getElementById("task").innerHTML = x;
+
+              2.  let x = "50" + 5;
+                console.log(x);
+
+               3. let myName = "SANNASI";
+                document.getElementById("task").innerHTML = myName;
+
+               4.  let z = 7;
+                {
+                  let z = 2;
+                }
+                document.getElementById("task").innerHTML = z;
+
+       //const
+      1. const num = [0, 2, 4];
+       num.push(6, 8);
+       document.getElementById("task").innerHTML = num;
+
+     2.  const detail = {
+         gender: "male",
+         age: "22",
+       };
+       detail.city = "Kovilpatti";
+       document.getElementById("task").innerHTML = detail.city;
+
+      3. const num = [3, 5];
+       num[0] = 1;
+       num.push(7, 9);
+       document.getElementById("task").innerHTML = num;
+
+      4. const electronic = {
+         mobile: "vivo",
+         earPh: "onePlus",
+       };
+       electronic.laptop = "MacBook";
+       document.getElementById("task").innerHTML = electronic.laptop;
+
+       //Operators
+
+      1. let x = 100 - 50 + 3 - 2;
+       console.log(x);
+
+     2.  let z = (2 ** 3 + 6) / 4 - 2 * 4;
+       console.log(z);
+
+     3.  let a = 78 + 6 / (15 + 3);
+       console.log(a);
+
+      4. var x = 5;
+       var b = 7;
+       var x = 3;
+       var c = x + b;
+       console.log(c);
+
+       //DataTypes
+
+    //string
+       var x = "Sannasi";
+       console.log(typeof x);
+
+       var y = "Sannasi + 07";
+       console.log(typeof y);
+
+       var z = "Sannasi";
+       console.log(typeof z);
+
+       //boolean
+
+       let x = 5;
+       let y = 5;
+       let z = x == y;
+       console.log(typeof z);
+
+       var a = -10;
+       var b = 10;
+       var c = a != b;
+       console.log(typeof c);
+
+       let abc = true;
+       let xyz = false;
+       let mno = abc && xyz;
+       console.log(typeof mno);
+
+       //array
+
+       let y = ["sanu", "moon", "earth"];
+       console.log(typeof y);
+
+       let x = ["1", "2", "3"];
+       console.log(typeof x);
+
+       let s = ["23.9", "12", "78.345"];
+       console.log(typeof s);
+
+       //Number
+
+       let num = 54 + 45;
+       result = num;
+       console.log(typeof result);
+
+       let abe = 24 + 87;
+       ans = abe - 10;
+       console.log(typeof ans);
+
+       let xyz = 67.8;
+       console.log(typeof xyz);
+
+       //object
+       let c = { gender: "male", age: "23" };
+       console.log(typeof c);
+
+       let fee = {
+         dev: "20k",
+         ui: "10k",
+         ds: "15k",
+       };
+       console.log(typeof fee);
+
+       //function
+       myFunction();
+
+     1.  function myFunction() {
+         let carName = "Volvo";
+         document.getElementById("task").innerHTML =
+           typeof carName + " " + carName;
+       }
+
+     2.  myCity();
+       function myCity() {
+         let cityName = "Kovilpatti";
+         document.getElementById("demo").innerHTML = cityName;
+       }
+
+     3.  myPet();
+       function myPet() {
+         var fav = "Dog";
+         document.getElementById("task").innerHTML = fav;
+       }
+
+      4. webDev();
+       function webDev() {
+         const learn = "MERN Developer";
+         document.getElementById("demo").innerHTML = learn;
+       }
+
+
+       //object
+
+     1.  let c = { gender: "male", age: "23" };
+       document.getElementById("task").innerHTML = c.gender;
+
+    2.   let fee = {
+         dev: "20k",
+         ui: "10k",
+         ds: "15k",
+       };
+       document.getElementById("demo").innerHTML = fee.ui;
+
+
+     3.  const person = {
+         firstName: "sannasi",
+         lastName: "chottu",
+         age: 23,
+       };
+       document.getElementById("demo").innerHTML =
+         person.firstName + " is " + person.age + " years old.";
+
+       //String
+
+       let answer1 = "I'm sannasi";
+       let answer2 = "Frd's called 'sannasi'";
+       let answer3 = 'Family called "sathish"';
+
+       document.getElementById("demo").innerHTML =
+         answer1 + "<br>" + answer2 + "<br>" + answer3;
+
+       //lenth
+       let x = "abcdefgh";
+       console.log(x.length);
+
+       let s = "sannasi";
+       console.log(s.length);
+
+       //slice
+       let str = "Apple, Banana, Kiwi";
+       document.getElementById("abc").innerHTML = str.slice(7, 13);
+
+       let favName = "dhojay, Dhosanjay, sanuj";
+       document.getElementById("abc").innerHTML = favName.slice(3, 6);
+
+       //substring
+       let str = "Apple, Banana, Kiwi";
+       document.getElementById("abc").innerHTML = str.substring(7, 13);
+
+       let hlo = "Apple, Banana, Kiwi";
+       document.getElementById("abc").innerHTML = hlo.substring(0, 5);
+
+       let s = "Apple, Banana, Kiwi";
+       document.getElementById("abc").innerHTML = s.substring(15, 19);
+
+    //Upper & lower
+    function myFunction() {
+      let text = document.getElementById("uplow").innerHTML;
+      document.getElementById("uplow").innerHTML = text.toUpperCase();
+    }*/
+
+    function myFunction() {
+      let text = document.getElementById("uplow").innerHTML;
+      document.getElementById("uplow").innerHTML = text.toLowerCase();
+    }
+  </script>
+</body>
