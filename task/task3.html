@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="task"></p>
+  </body>
+  <script>
+    /*
+    // if condition
+
+    if (new Date().getHours() < 18) {
+      document.getElementById("demo").innerHTML = "Good day!";
+    }
+
+    if (true) {
+      document.getElementById("task").innerHTML = "if condition statement";
+    }
+
+    if (true) {
+      document.getElementById("demo").innerHTML = "true condition satisfied";
+    }
+    // if else
+    const hour = new Date().getHours();
+    let greeting;
+    if (hour < 18) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+
+    if (false) {
+      state = "if state";
+    } else {
+      state = "else state";
+    }
+    document.getElementById("task").innerHTML = state;
+
+    if (false) {
+      state = "if statement is false";
+    } else {
+      state = "default statement";
+    }
+    document.getElementById("demo").innerHTML = state;
+
+    if (false) {
+      state = "contision false";
+    } else {
+      state = "contision true";
+    }
+    document.getElementById("task").innerHTML = state;
+
+    //else if
+    const time = new Date().getHours();
+    let greeting;
+    if (time < 10) {
+      greeting = "Good morning";
+    } else if (time < 20) {
+      greeting = "Good day";
+    } else {
+      greeting = "Good evening";
+    }
+    document.getElementById("demo").innerHTML = greeting;
+
+    const food = new Date().getHours();
+    let eat;
+    if (time < 10) {
+      eat = "brk fst";
+    } else if (time < 15) {
+      eat = "lunch";
+    } else {
+      eat = "dinner";
+    }
+    document.getElementById("task").innerHTML = eat;
+
+    const food = new Date().getHours();
+    let eat;
+    if (time < 10) {
+      eat = "break fast time";
+    } else if (time < 15) {
+      eat = "lunch time";
+    } else {
+      eat = "Dinner time";
+    }
+    document.getElementById("task").innerHTML = eat;
+
+    const food = new Date().getHours();
+    let eat;
+    if (time < 10) {
+      eat = "brk fst";
+    } else if (time < 15) {
+      eat = "lunch";
+    } else {
+      eat = "dinner";
+    }
+    document.getElementById("task").innerHTML = eat;
+
+    //For loop
+
+    const sub = ["Tamil", "English", "Maths", "Science", "Social"];
+    let text = "";
+    for (let i = 0; i < sub.length; i++) {
+      text += sub[i] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = text;
+
+    const dev = ["ui/ux", "mern", "mean", "mevn"];
+    let programmer = "";
+    for (let i = 0; i < dev.length; i++) {
+      programmer += dev[0] + "<br>";
+    }
+    document.getElementById("demo").innerHTML = dev;
+
+    const city = ["kvp", "cbe", "dgl", "mdu"];
+    let tn = "";
+    for (let i = 0; i < city.length; i++) {
+      tn += city[0] + "<br>";
+    }
+    document.getElementById("task").innerHTML = city;
+
+    let add = "";
+    for (let i = 0; i <= 5; i++) {
+      add += "Add num of " + i + "<br>";
+    }
+    document.getElementById("task").innerHTML = add;
+
+    // for In
+
+    const person = { fname: "sannasi", lname: "chottu", age: 23 };
+    let txt = "";
+    for (let x in person) {
+      txt += person[x] + " ";
+    }
+    document.getElementById("demo").innerHTML = txt;
+
+    const dev = {
+      spl: "mern",
+      sug: "developer",
+    };
+    let worker = "";
+    for (let x in dev) {
+      worker += dev[x] + " ";
+    }
+    document.getElementById("task"). innerHTML = worker;
+
+    const dev = {
+      hy: "I'm",
+      spl: "Web",
+      sug: "developer",
+    };
+    let worker = "";
+    for (let y in dev) {
+      worker += dev[y] + " ";
+    }
+    document.getElementById("demo").innerHTML = worker;
+
+    //forEach
+    const numbers = [1, 2, 3, 4, 5, 6];
+    let txt = "";
+    numbers.forEach(myFunction);
+    document.getElementById("demo").innerHTML = txt;
+    function myFunction(value, index, array) {
+      txt += value + "<br>";
+    }
+    const nam = ["san", "sam", "chottu"];
+    let txt = "";
+    nam.forEach(myName);
+    document.getElementById("task").innerHTML = txt;
+    function myName(value, index, array) {
+      txt += value + "<br>";
+    }
+
+    const sub = ["tamil", "eng", "Math", "sci"];
+    let study = "";
+    sub.forEach(mySub);
+    document.getElementById("task").innerHTML = study;
+    function mySub(value, index, array) {
+      study += value + "<br>";
+    }
+
+    const eat = ["snacks", "drink", "ice-cream"];
+    let food = "";
+    eat.forEach(myEat);
+    document.getElementById("demo").innerHTML = food;
+    function myEat(value, index, array) {
+      food += value + "<br>";
+    }
+
+    //for of
+
+    const eat = ["snacks", "drink", "ice-cream"];
+    let food = "";
+    for (let x of eat) {
+      food += x + "<br>";
+    }
+    document.getElementById("demo").innerHTML = food;
+
+    const music = ["u1", "gvp", "arr", "harish"];
+    let direct = "";
+    for (let x of music) {
+      direct += x + "<br>";
+    }
+    document.getElementById("task").innerHTML = direct;
+
+    const direct = ["vetri", "lokesh", "ar", "atlee"];
+    let mov = "";
+    for (let x of direct) {
+      mov += x + "<br>";
+    }
+    document.getElementById("demo").innerHTML = mov;
+
+
+    const office = ["aari", "it", "freelance"];
+    let home = "";
+    for (let x of office) {
+      home += x + "<br>";
+    }
+    document.getElementById("task").innerHTML = home;
+
+    //while loop
+
+    let text = "";
+    let i = 0;
+    while (i < 3) {
+      text += "<br> Number is " + i;
+      i++;
+    }
+    document.getElementById("demo").innerHTML = text;
+
+    let i = 1;
+    let n = 5;
+    while (i <= n) {
+      console.log(i);
+      i += 1;
+    }
+    let nums = "";
+    let i = 55;
+    while (i < 60) {
+      nums += "<br> num's = " + i;
+      i++;
+    }
+    document.getElementById("task").innerHTML = nums;
+
+    //Do While loop
+
+    let text = "";
+    let i = 5;
+    do {
+      text += "<br>** number is   " + i;
+      i++;
+    } while (i < 8);
+    document.getElementById("demo").innerHTML = text;
+
+
+    let ans = "";
+    let i = 5;
+    do {
+      i = i + 1;
+      ans = ans + i;
+    } while (i < 8);
+    document.getElementById("task").innerText = ans;
+
+    let count = 0;
+    do {
+      console.log(count);
+      count++;
+    } while (count < 5);
+
+    var num = 10,
+      total = 0;
+    do {
+      total = total + num;
+      document.write("<br\>Number  =  " + num);
+      document.write("<br\> Total Value is = " + total);
+      num++;
+    } while (number < 15);
+    document.write("<br\>  ", total); */
+  </script>
+</html>

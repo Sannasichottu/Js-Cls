@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+
+  <script>
+    /*
+       //  1. print the “Hello World”
+
+         function mgs() {
+           console.log("Hello World");
+         }
+         mgs();
+
+
+       // 2. square of a number
+
+        function square(multiple) {
+           return multiple * multiple;
+         }
+
+         console.log(square(2)); //4
+         console.log(square(3)); //9
+         console.log(square(4)); //16
+
+      // 3. Celsius to Fahrenheit
+
+       function fahrenheit(Celsius) {
+           return (Celsius * 9) / 5 + 32;
+         }
+
+         console.log(fahrenheit(-5)); //23
+         console.log(fahrenheit(0)); //32
+         console.log(fahrenheit(5)); //41
+
+
+      //  4. Rectangle
+
+        function rectangleArea(a, b) {
+           return `The area of Rectangle is ${a * b}`;
+         }
+         console.log(rectangleArea(5, 10)); //50
+         console.log(rectangleArea(20, 20)); //400
+
+     //   5. perimeter of a Circle
+
+        function circle(radius) {
+           return `Perimeter: ${2 * Math.PI * radius}, Area: ${
+             Math.PI * radius * radius
+           }`;
+         }
+         console.log(circle(5)); //Perimeter: 31.41, Area: 78.53
+         console.log(circle(10)); //Perimeter: 62.83, Area: 314.15
+         console.log(circle(15)); //Perimeter: 94.24, Area: 706.85
+
+     //  6. reverse
+
+       function reverseNum(num) {
+           var reverse = 0;
+           while (num != 0) {
+             reverse = reverse * 10;
+             reverse = reverse + (num % 10);
+             num = Math.trunc(num / 10); // Remove decimal places
+           }
+           return reverse;
+         }
+         console.log(reverseNum(123456789));
+
+      // 7. Vowel
+
+       function countVowel(str) {
+           var count = 0;
+           str = str.toLowerCase();
+           for (var i = 0; i < str.length; i++) {
+             if (
+               str.charAt(i) == "a" ||
+               str.charAt(i) == "e" ||
+               str.charAt(i) == "i" ||
+               str.charAt(i) == "o" ||
+               str.charAt(i) == "u"
+             ) {
+               count++;
+             }
+           }
+           return count;
+         }
+         console.log(countVowel("vocal letter")); //4
+
+      // 8.  Reduce
+
+       function flattenArr(arr) {
+           return arr.reduce((result, array) => result.concat(array));
+         }
+         console.log(
+           flattenArr([
+             [1, 2, 3],
+             [4, 5, 6],
+             [7, 8, 9],
+           ])
+         );
+
+     // 9. string is a palindrome
+
+       function checkPalindrome(str) {
+         for (var i = 0; i < str.length; i++) {
+           if (str.charAt(i) != str.charAt(str.length - i - 1)) {
+             return false;
+           }
+         }
+         return true;
+       }
+       console.log(checkPalindrome("developer")); //false
+       console.log(checkPalindrome("racecar")); //true
+       console.log(checkPalindrome("rapido")); //true
+
+    // 10.  function simpleInt(total, intrest, duration) {
+         var finalAmt = total + total * duration * intrest;
+         return finalAmt;
+       }
+
+       console.log(simpleInt(5000, 3, 5)); //80,000
+       console.log(simpleInt(10000, 6, 10)); //6,10,000
+
+       // 11.interest based on the principle amount
+
+       function simpleInt(principle, rate, time, n) {
+         var interest = principle * Math.pow(1 + rate / n, n * time);
+         return principle + interest;
+       }
+
+       console.log(simpleInt(2000, 5, 2, 2)); //302125
+       console.log(simpleInt(10000, 20, 1, 2)); //1220000
+
+       //12. generate a random
+       function randomNum(start, end) {
+         return Math.floor(Math.random() * end) + start;
+       }
+       console.log(randomNum(1, 10));
+
+       // 13. function to find Factorial
+
+       function getFactorial(num) {
+         if (num == 1) {
+           return 1;
+         }
+         if (num == 0 || num < 0) {
+           return 0;
+         }
+         return num * getFactorial(num - 1);
+       }
+       console.log(getFactorial(7)); // 5040
+
+    /*   // 14. add unlimited numbers
+
+       function addNumber(...args) {
+         return args.reduce((total, num) => total + num); //Add numbers
+       }
+
+       console.log(addNumber(28, 0, 12)); // 40
+
+       // 15. unlimited arrays
+
+       function addArrays(...args) {
+         return args.reduce((total, arr) => total.concat(arr));
+       }
+       console.log(addArrays([2, 3, 4], [6, 4, 9], [34, 6, 4]));
+       console.log(addArrays(["Hlo"], ["Hi"], ["Hey"]));
+
+       // 16. count of a letter
+
+       function letterCount(str, c) {
+         var count = 0;
+         str = str.toLowerCase();
+         for (var i = 0; i < str.length; i++) {
+           if (str.charAt(i) == c) {
+             count++;
+           }
+         }
+         return count;
+       }
+       console.log(letterCount("Connect", "c")); // 2
+       console.log(letterCount("first person", "i")); // 2
+
+    // 17.number is Prime
+
+    function checkPrime(num, div = 2) {
+      if (num <= 2) {
+        return num == 2 ? true : false;
+      }
+      if (div * div > num) {
+        return true;
+      }
+      if (num % div == 0) {
+        return false;
+      }
+      return checkPrime(num, div + 1);
+    }
+    console.log(checkPrime(19));
+    console.log(checkPrime(10)); */
+  </script>
+</html>

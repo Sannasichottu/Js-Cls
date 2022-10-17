@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="task"></p>
+  </body>
+  <script>
+    /*
+
+        //Type Conversion
+
+        //string to Num
+        document.getElementById("task").innerHTML =
+          Number("7" + Math.PI) + "<br>" + Number("SannasI");
+
+        //Num -> string
+        let num = 13;
+        let str = String(num);
+        document.getElementById("demo").innerHTML = typeof str;
+
+        let num = 3;
+        let str = String(num) + "2";
+        document.getElementById("task").innerHTML = typeof str;
+        //Date -> Num
+        let date = new Date();
+        let res = Number(date);
+        document.getElementById("task").innerHTML = res;
+
+        let date2 = new Date();
+        let res1 = date2.toString();
+        document.getElementById("demo").innerHTML = res1;
+
+    //Error
+
+    //try-catch
+
+    try {
+      empty();
+    } catch (err) {
+      document.getElementById("demo").innerHTML = "catch statement print";
+    }
+
+    try {
+      fun("I'm not Fun");
+    } catch (err) {
+      document.getElementById("task").innerHTML = "I'm Error point";
+    }
+
+    try {
+      empty(4);
+    } catch (err) {
+      document.getElementById("demo").innerHTML = "Num not print";
+    }
+
+    //try-catch-finally
+    try {
+      var a = 2;
+      if (a == 2) document.write("k");
+    } catch (err) {
+      document.write("Err print" + e.message);
+    } finally {
+      document.write("Finally statement");
+    }
+
+    try {
+      let num = 5;
+      if (a == 5) document.write("print");
+    } catch (err) {
+      document.getElementById("demo").innerHTML = "Catch print" + num;
+    } finally {
+      document.getElementById("task").innerHTML = "finally print" + num;
+    }
+
+    //Hoisting
+
+    num = 7;
+    document.getElementById("task").innerHTML = num;
+    var num;
+
+    var num1 = 3;
+    num2 = 2;
+    document.getElementById("demo").innerHTML =
+      "num1 is " + num1 + "<br>" + "num2 is " + num2;
+    var num2;
+
+    var num;
+    document.getElementById("demo").innerHTML = num;
+    num = 5;
+
+    var num2 = 1;
+    num1 = 2;
+    document.getElementById("demo").innerHTML =
+      "num1 is " + num1 + "<br>" + "num2 is " + num2;
+    var num1;
+
+    //this keyword
+
+    const detail = {
+      nam: "sannasi",
+      stdy: "Bsc",
+      ph: 72720,
+      personDetail: function () {
+        return this.nam + " " + this.stdy + " " + this.ph;
+      },
+    };
+    document.getElementById("demo").innerHTML = detail.personDetail();
+
+    let num = {
+      abc: 3,
+      xyz: 2,
+      addNum: function () {
+        return this.abc + this.xyz;
+      },
+    };
+    document.getElementById("task").innerHTML = num.addNum();
+
+    const person1 = {
+      firstName: "sannasi",
+      lastName: "chottu",
+    };
+
+    const person2 = {
+      fullName: function () {
+        return this.firstName + " " + this.lastName;
+      },
+    };
+
+    let x = person2.fullName.call(person1);
+    document.getElementById("demo").innerHTML = x;
+
+    const product = {
+      fullDetail: function () {
+        return this.num1 + this.num2;
+      },
+    };
+    const nums = {
+      num1: 3,
+      num2: 5,
+    };
+    let addNum = product.fullDetail.call(nums);
+    document.getElementById("task").innerHTML = addNum;
+
+    const person = {
+      firstName: "sannasi",
+      lastName: "chottu",
+      fullName: function () {
+        return this.firstName + " " + this.lastName;
+      },
+    };
+    const member = {
+      firstName: "Dhoni",
+      lastName: "Vijay",
+    };
+    let fullName = person.fullName.bind(member);
+
+    document.getElementById("demo").innerHTML = fullName();
+
+    const nums1 = {
+      abc: "san",
+      xyz: "chottu",
+      total: function () {
+        return this.abc + this.xyz;
+      },
+    };
+    const nums2 = {
+      abc: 3,
+      xyz: 4,
+    };
+    let result = nums1.total.bind(nums2);
+
+    document.getElementById("task").innerHTML = result(); */
+  </script>
+</html>

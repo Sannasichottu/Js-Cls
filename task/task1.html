@@ -111,6 +111,81 @@
       return num % 10 === 0 ? true : false;
     };
 
-    console.log(booleanNum(20));*/
+    console.log(booleanNum(20));
+
+    //Vowels letter count
+    var s = "The quick brown fox jumps over the lazy dog";
+
+    function countVowels(s) {
+      var c = s.match(/[aeiou]/gi);
+      return c === null ? 0 : c.length;
+    }
+    console.log(countVowels(s));
+
+
+
+
+     //Number -> Roman letter
+
+    class Solution {
+      convertToRoman(number) {
+        let num = [1, 4, 5, 9, 10, 40, 50, 90, 100, 400, 500, 900, 1000];
+        let sym = [
+          "I",
+          "IV",
+          "V",
+          "IX",
+          "X",
+          "XL",
+          "L",
+          "XC",
+          "C",
+          "CD",
+          "D",
+          "CM",
+          "M",
+        ];
+        let i = 12;
+        let final = "";
+        while (number > 0) {
+          let div = Math.floor(number / num[i]);
+          number = number % num[i];
+          while (div) {
+            final += sym[i];
+            div--;
+          }
+          i--;
+        }
+        return final;
+      }
+    }
+
+    //Roman -> number
+
+    const roman = {
+     I: 1,
+     V: 5,
+     X: 10,
+     L: 50,
+     C: 100,
+     D: 500,
+     M: 1000
+ }
+
+class Solution {
+    romanToDecimal(str = ''){
+      //code here
+      let sum = 0, p='';
+      str.split('').forEach(c => {
+          sum+=roman[c];
+          if(p !== '' && roman[p]<roman[c]){
+              sum-=2*roman[p];
+          }
+          p = c;
+
+      })
+      return sum;
+    }
+}*/
   </script>
 </html>
