@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="demo"></p>
+    <p id="task"></p>
+  </body>
+  <script>
+    /*
+
+      //Synchronous
+
+      console.log("sannasi");
+      console.log(2);
+      setTimeout(() => {
+        console.log("waiting");
+      }, 2000);
+      console.log(3.5);
+
+      //call back
+
+      function detail() {
+        console.log("helo nanba");
+      }
+
+      function dev() {
+        console.log("I'm Developer");
+      }
+      dev();
+      detail();
+
+      function luv(name, callback) {
+        console.log("Hey" + " " + name);
+        callback();
+      }
+      function callMe() {
+        console.log("I am callback funtion");
+      }
+      luv("user", callMe);
+
+      function fun(vadi, callback) {
+        console.log("Act" + " " + vadi);
+        callback();
+      }
+      function dram() {
+        console.log("mov");
+      }
+      fun("cinema", dram);
+
+      //promise
+
+      const count = true;
+      let countValue = new Promise(function (resolve, reject) {
+        if (count) {
+          resolve("There is a count value.");
+        } else {
+          reject("There is no count value");
+        }
+      });
+      console.log(countValue);
+
+      const mov = false;
+      let cinema = new Promise((resolve, reject) => {
+        if (mov) {
+          resolve("Ghilli is a Vijay mov");
+        } else {
+          reject("mangaththa not a vijay movie");
+        }
+      });
+      console.log(cinema);
+
+      const music = false;
+      let playSong = new Promise((resolve, reject) => {
+        if (music) {
+          console.log("Music is playing");
+        } else {
+          console.log("Music is Stop");
+        }
+      });
+      console.log(playSong);
+
+
+
+      //async - await
+
+      async function sub() {
+        console.log("tamil");
+      }
+      sub();
+
+
+      async function lub() {
+        let myLife = new Promise((resolve, reject) => {
+          resolve("Luv the people");
+        });
+        document.getElementById("task").innerHTML = await myLife;
+      }
+      lub();
+
+
+
+    let lub = false;
+
+    function time(ms) {
+      return new Promise((resolve, reject) => {
+        if (lub) {
+          setTimeout(resolve, ms);
+        } else {
+          reject(console.log("no more lub"));
+        }
+      });
+    }
+
+    async function music() {
+      try {
+        await time(2000);
+        console.log("Time travel lub");
+      } catch (err) {
+        console.log("catch error");
+      } finally {
+        console.log("World lub");
+      }
+    }
+    music();
+
+    let music = false;
+
+    function time(ms) {
+      return new Promise((resolve, reject) => {
+        if (music) {
+          setTimeout(resolve, ms);
+        } else {
+          reject(console.log("no more lub"));
+        }
+      });
+    }
+
+    async function play() {
+      try {
+        await time(2000);
+        console.log("ponniyin selvan");
+
+        await time(2000);
+        console.log("beast playlist");
+      } catch (err) {
+        console.log("music player is stoped");
+      } finally {
+        console.log("Music on :)");
+      }
+    }
+
+    play(); */
+  </script>
+</html>
